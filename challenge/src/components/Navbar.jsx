@@ -18,6 +18,11 @@ const Navbar = () => {
             Work
           </NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink to="/contact" className="nav-link">
+            Contact Me
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
