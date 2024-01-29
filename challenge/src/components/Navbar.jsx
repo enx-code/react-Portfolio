@@ -13,6 +13,11 @@ const Navbar = () => {
             About Me
           </NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink to="/work" className="nav-link">
+            Work
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
