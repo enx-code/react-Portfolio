@@ -7,6 +7,13 @@ const Navbar = () => {
       <NavLink to="/" className="navbar-brand fs-3">
         <h1>Enkhbat B</h1>
       </NavLink>
+      <ul className="nav nav-pills">
+        <li className="nav-item">
+          <NavLink to="/about" className="nav-link">
+            About Me
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   );
 };
