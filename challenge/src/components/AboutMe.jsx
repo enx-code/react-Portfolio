@@ -2,12 +2,12 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="row">
+    <div className="row mx-1">
       <h5 id="scrollspyHeading1" className="fs-2 col text-end">
         About Me
       </h5>
       <div className="card col-10 border-start border-dark border-4">
-        <div className="card-body">
+        <div className="card-body ml-9">
           Hello, I'm Enkhbat, a passionate front-end developer with a keen eye
           for detail and a love for technology. I recently completed a
           comprehensive front-end development bootcamp, where I honed my skills
