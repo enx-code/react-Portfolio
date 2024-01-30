@@ -16,7 +16,7 @@ function Project({ id, title, deployedLink, githubLink, image }) {
           GitHub Repository
         </a>
       </p>
-      <Link to={`/projects/${id}`}>Details</Link>
+      <Link to={`/work/${id}`}>Details</Link>
     </div>
   );
 }
