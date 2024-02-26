@@ -4,6 +4,7 @@
 .navbar-brand {
   background-color: var(--border-color);
   padding: 0 20px;
+  border-radius: 0.375rem;
 }
 .nav-pills a {
   color: var(--border-color);
@@ -110,4 +111,17 @@
 .btn:hover {
     background-color: bisque;
     color: var(--letter-color);
+    border-radius: 0.375rem;
 }
+.nav-link.active, .btn {
+  background-color: var(--border-color) !important;
+  color: black !important;
+  border-radius: 0.375rem;
+
+}
+/* .btn {
+  background-color: var(--border-color) !important;
+  color: black !important;
+  border-radius: 0.375rem;
+
+} */
