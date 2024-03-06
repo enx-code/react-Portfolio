@@ -93,8 +93,8 @@
 .row ul li a:hover,
 .nav-pills a:hover {
   border: solid 3px var(--border-color) !important;
-  transform: scale(1.02) !important;
-  box-shadow: 10px 10px 30px var(--border-color);
+  transform: scale(1.00) !important;
+  box-shadow: 0px 0px 20px var(--border-color);
 }
 .nav-pills a:hover {
     color: var(--border-color);
@@ -119,9 +119,6 @@
   border-radius: 0.375rem;
 
 }
-/* .btn {
-  background-color: var(--border-color) !important;
-  color: black !important;
-  border-radius: 0.375rem;
-
-} */
+.nav-pills {
+  column-gap: 10px;
+}

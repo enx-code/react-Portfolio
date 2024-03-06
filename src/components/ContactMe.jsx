@@ -30,36 +30,11 @@ function ContactMe() {
         <h5 id="scrollspyHeading3" className="fs-2 col-2 text-end">
           Contact Me
         </h5>
-        <ul className="fs-4 nav justify-content-center justify-content-around align-content-start col-10 border-start border-dark border-4">
-          <li className="nav-item">
-            <a
-              className="nav-link active"
-              aria-current="page"
-              href="www.linkedin.com/in/enkhbat-baatar-521a3890"
-            >
-              Linkedin
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Email
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href='www.google.com'>
-              Instagram
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Phone
-            </a>
-          </li>
-        </ul>
-        <div className="row justify-content-end mt-5">
+        
+        <div className="fs-4 nav justify-content-center justify-content-around align-content-start col-10 border-start border-dark border-4">
           <form
             onSubmit={handleSubmit}
-            className="col-10 fs-4 border-start border-dark border-4"
+            className="col-10 fs-4"
           >
             <div className="mb-3">
               <label htmlFor="name" className="form-label">
@@ -94,6 +69,7 @@ function ContactMe() {
                 Message:
               </label>
               <textarea
+                rows={10}
                 className="form-control"
                 id="message"
                 name="message"

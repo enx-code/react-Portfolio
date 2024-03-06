@@ -3,6 +3,11 @@ import React from "react";
 const Home = () => {
   return (
     <div className="row mx-1">
+      <div class="jumbotron jumbotron-fluid" id="hero-bg">
+        <div class="container">
+          <h6 class="display-4">Create Mindset to Learn!</h6>
+        </div>
+      </div>
       <h5 id="scrollspyHeading2" className="fs-2 col-2 text-end">
         Work
       </h5>
