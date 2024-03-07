@@ -11,7 +11,7 @@ export const projectsData = [
     title: "Generate Password",
     deployedLink: "https://enx-code.github.io/Password-Generator/",
     githubLink: "https://github.com/enx-code/Password-Generator",
-    image: "./src/images/Screenshot 2024-01-30 at 16.20.15.png",
+    image: "./src/images/passGenerator.png",
   },
   {
     id: 3,

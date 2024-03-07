@@ -27,7 +27,7 @@
 :root {
   --letter-color: rgb(12, 74, 12);
   --border-color: greenyellow;
-  --image-height: 180px;
+  --image-height: 250px;
 }
 
 .seo {
@@ -46,20 +46,19 @@
   opacity: 0.8;
   color: var(--letter-color);
 }
-.codeWars-image {
-  background-image: url(../images/codewars.png);
-  background-size: cover;
+img {
+  /* background-image: url(../images/codewars.png); */
+  /* background-size: cover; */
   height: var(--image-height);
+  object-fit: cover;
 }
-.calculator-image {
-  background-image: url(../images/02-portfolio-2.jpg);
-  background-size: cover;
-  height: var(--image-height);
-}
-.codeWars,
+
+
+/* .codeWars,
 .calculator,
 .puzzels,
-.run {
+.run, */
+img {
   background-color: bisque;
   padding: 5px;
   border-bottom: solid 3px var(--border-color);
@@ -70,7 +69,7 @@
   margin-left: -12px;
   color: var(--letter-color);
 }
-.puzzels-image {
+/* .puzzels-image {
   background-image: url(../images/Screenshot\ 2023-11-06\ at\ 10.30.23.png);
   background-size: cover;
   height: var(--image-height);
@@ -80,7 +79,7 @@
   background-size: cover;
   height: var(--image-height);
   color: var(--letter-color);
-}
+} */
 .row ul li a {
   color: var(--letter-color) !important;
   border-bottom: solid 3px var(--letter-color);
@@ -121,4 +120,14 @@
 }
 .nav-pills {
   column-gap: 10px;
+}
+.card-body {
+  /* Example fixed dimensions, adjust or make responsive as needed */
+  height: 300px !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
