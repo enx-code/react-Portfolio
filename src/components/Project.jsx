@@ -16,8 +16,8 @@ function Project({ id, title, deployedLink, githubLink, image }) {
     //       GitHub Repository
     //     </a>
     //   </p> */}
-      <div className="row">
-        <div className="col-sm-6">
+      {/* <div className="row"> */}
+        <div className="col-sm-8">
           <div className="card">
             <div className={`card-body ${image}`}>
               <a href={deployedLink} className="btn btn-primary codeWars">
@@ -27,7 +27,7 @@ function Project({ id, title, deployedLink, githubLink, image }) {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
       <Link to={`/work/${id}`}>Details</Link>
     </div>
   );
