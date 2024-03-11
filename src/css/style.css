@@ -10,7 +10,6 @@
   color: var(--border-color);
 }
 #hero-bg {
-  background-image: url("./src/images/matrix.jpeg");
   background-size: cover;
   height: 100vh;
   margin-top: -20px;

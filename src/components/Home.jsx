@@ -1,9 +1,15 @@
 import React from "react";
 
 const Home = () => {
+  const imagePath = `${import.meta.env.BASE_URL}matrix.jpeg`;
+  console.log(imagePath)
   return (
     <div className="row">
-      <div className="jumbotron jumbotron-fluid" id="hero-bg">
+      <div
+        className="jumbotron jumbotron-fluid"
+        id="hero-bg"
+        style={{ backgroundImage: `url(${imagePath})` }}
+      >
         <div className="container">
           <h6 className="display-4">Create Mindset to Learn!</h6>
         </div>
@@ -12,7 +18,6 @@ const Home = () => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                // aria-current="page"
                 href="www.linkedin.com/in/enkhbat-baatar-521a3890"
               >
                 Linkedin
