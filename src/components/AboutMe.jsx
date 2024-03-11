@@ -8,11 +8,9 @@ const AboutMe = () => {
       </h5>
       <div className="card col-10 border-start border-dark border-4">
         <img
-          src="./src/images/EnkyPhoto.webp"
+          src={`${import.meta.env.BASE_URL}./EnkyPhoto.webp`}
           alt="portrait"
           className="aboutMe"
-          // style={{maxWidth: "20%",
-          // minWidth: "19%"}}
         />
         <div className="card-body ml-9">
           Hello, I'm Enkhbat, a passionate front-end developer with a keen eye
