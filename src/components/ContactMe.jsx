@@ -14,14 +14,10 @@ function ContactMe() {
     });
   };
 
+  // Simplified handleSubmit just logs the data
   const handleSubmit = (e) => {
-    e.preventDefault();
     console.log("Form submitted:", formData);
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    // No e.preventDefault(); allow the form to submit normally
   };
 
   return (
@@ -33,7 +29,7 @@ function ContactMe() {
 
         <div className="fs-4 nav justify-content-center justify-content-around align-content-start col-10 border-start border-dark border-4">
           <form
-            action="https://getform.io/f/lakomgya"
+            action="https://getform.io/f/lakomgya?redirect=https://https://coruscating-bavarois-3bff34.netlify.app/thank-you"
             method="POST"
             onSubmit={handleSubmit}
             className="col-10 fs-4"
