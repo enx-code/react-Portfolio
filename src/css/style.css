@@ -40,8 +40,6 @@
   color: var(--letter-color);
 }
 img {
-  /* background-image: url(../images/codewars.png); */
-  /* background-size: cover; */
   height: var(--image-height);
   object-fit: cover;
 }

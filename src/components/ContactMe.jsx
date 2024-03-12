@@ -30,9 +30,11 @@ function ContactMe() {
         <h5 id="scrollspyHeading3" className="fs-2 col-2 text-end">
           Contact Me
         </h5>
-        
+
         <div className="fs-4 nav justify-content-center justify-content-around align-content-start col-10 border-start border-dark border-4">
           <form
+            action="https://getform.io/f/lakomgya"
+            method="POST"
             onSubmit={handleSubmit}
             className="col-10 fs-4"
           >
@@ -79,7 +81,7 @@ function ContactMe() {
               />
             </div>
             <button type="submit" className="btn btn-primary fs-4">
-              Submit
+              Send
             </button>
           </form>
         </div>
