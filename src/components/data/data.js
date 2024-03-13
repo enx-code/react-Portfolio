@@ -1,10 +1,12 @@
+import image1 from "/Users/Enky/bootcamp/react-Portfolio/src/images/1project.png";
+
 export const projectsData = [
   {
     id: 1,
     title: "Portfolio based on only HTML and CSS",
     deployedLink: "https://enx-code.github.io/Bootstrap-Portfolio/",
     githubLink: "https://github.com/enx-code/Bootstrap-Portfolio",
-    image: "./src/images/1project.png",
+    image: image1,
   },
   {
     id: 2,

@@ -5,7 +5,7 @@ import Project from "./Project";
 function Work() {
   return (
     <div className="row">
-      <h2 id="scrollspyHeading2" class="fs-2 col-2 text-end">
+      <h2 id="scrollspyHeading2" className="fs-2 col-2 text-end">
         Project Gallery
       </h2>
       <div className="col-10 border-start border-dark border-4">
