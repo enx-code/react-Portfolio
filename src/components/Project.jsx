@@ -15,11 +15,9 @@ function Project({ id, title, deployedLink, githubLink, image }) {
             width: "100%",
           }}
         >
-          {/* <img src={image} alt={`${title} Preview`} className="card-body" /> */}
-
           <a href={deployedLink} className="btn btn-primary codeWars">
             <h4 className="card-title">{title}</h4>
-            {/* <p className="card-text">Kata</p> */}
+            <p className="card-text">Deployed Site</p>
           </a>
         </div>
       </div>
