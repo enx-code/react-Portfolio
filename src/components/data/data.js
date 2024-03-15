@@ -1,31 +1,36 @@
 import image1 from "../../images/1project.png";
+import image2 from "../../images/passGenerator.png";
+import image3 from "../../images/ClickyGame.png";
+import image4 from "../../images/codewars.png";
+import image5 from "../../images/1project.png";
+import image6 from "../../images/1project.png";
 export const projectsData = [
   {
     id: 1,
     title: "Portfolio based on only HTML and CSS",
     deployedLink: "https://enx-code.github.io/Bootstrap-Portfolio/",
     githubLink: "https://github.com/enx-code/Bootstrap-Portfolio",
-    image: image1
+    image: image1,
   },
   {
     id: 2,
     title: "Generate Password",
     deployedLink: "https://enx-code.github.io/Password-Generator/",
     githubLink: "https://github.com/enx-code/Password-Generator",
-    image: "./src/images/passGenerator.png",
+    image: image2,
   },
   {
     id: 3,
     title: "Clicky Game",
     deployedLink: "https://profound-pony-c8ae06.netlify.app",
     githubLink: "https://github.com/enx-code/lor-cicd-pipeline",
-    image: "./src/images/ClickyGame.png",
+    image: image3,
   },
   {
     id: 4,
     title: "Code Wars",
     deployedLink: "https://www.codewars.com/users/enx-code",
-    image: "./src/images/codewars.png",
+    image: image4,
   },
   {
     id: 5,
