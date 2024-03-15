@@ -1,7 +1,5 @@
-// ProjectDetails.jsx
-import React from "react";
 import { useParams } from "react-router-dom";
-import { projectsData } from "./data/data"; // Adjust this path as necessary
+import { projectsData } from "./data/data";
 
 function ProjectDetails() {
   let { projectId } = useParams();

@@ -7,7 +7,7 @@ import image6 from "../../images/1project.png";
 export const projectsData = [
   {
     id: 1,
-    title: "Portfolio based on only Bootstrap",
+    title: "Portfolio based only on Bootstrap",
     deployedLink: "https://enx-code.github.io/Bootstrap-Portfolio/",
     githubLink: "https://github.com/enx-code/Bootstrap-Portfolio",
     image: image1,

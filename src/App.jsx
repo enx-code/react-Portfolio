@@ -5,8 +5,7 @@ import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Work from "./components/Work";
 import ContactMe from "./components/ContactMe";
-// import Project from "./components/Project"
-import ProjectDetails from './components/ProjectDetails'; // Import the new component
+import ProjectDetails from './components/ProjectDetails';
 
 function App() {
   return (
