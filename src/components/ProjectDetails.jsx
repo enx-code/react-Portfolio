@@ -11,12 +11,12 @@ function ProjectDetails() {
 
   return (
     <div className="row vertical-center-row">
+      <h2 className="text-center">{project.title}</h2>
       <img
         src={project.image}
         alt={project.title}
         style={{ maxWidth: "100%" }}
       />
-      <h2 className="text-center">{project.title}</h2>
       {project.githubLink && (
         <a
           href={project.githubLink}
@@ -24,7 +24,7 @@ function ProjectDetails() {
           rel="noopener noreferrer"
           className="text-center"
         >
-          GitHub URL
+          <h3>GitHub URL</h3>
         </a>
       )}
     </div>

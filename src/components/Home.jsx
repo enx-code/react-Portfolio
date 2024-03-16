@@ -1,8 +1,16 @@
-import React from "react";
-
+import React, { useState } from "react";
 const Home = () => {
+  const [isHovering, setIsHovering] = useState(false);
   const imagePath = `${import.meta.env.BASE_URL}matrix.jpeg`;
   console.log(imagePath)
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
   return (
     <div className="row">
       <div
@@ -18,9 +26,19 @@ const Home = () => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="www.linkedin.com/in/enkhbat-baatar-521a3890"
+                href="https://www.linkedin.com/in/enkhbat-baatar-521a3890"
               >
                 Linkedin
+              </a>
+            </li>
+            <li
+              className="nav-item"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <a className="nav-link" href="#">
+                Phone{" "}
+                {isHovering && <span style={{ color: "brightgreen" }}>123456789</span>}
               </a>
             </li>
             <li className="nav-item">
@@ -29,13 +47,8 @@ const Home = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="www.google.com">
+              <a className="nav-link" href="https://www.google.com">
                 Instagram
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Phone
               </a>
             </li>
           </ul>
