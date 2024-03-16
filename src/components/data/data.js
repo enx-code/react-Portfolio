@@ -30,7 +30,7 @@ export const projectsData = [
     id: 4,
     title: "Code Wars",
     deployedLink: "https://www.codewars.com/users/enx-code",
-    githubLink: "This is the website where I practice my JavaScript skills by solving challenges.",
+    desc: "This is the website where I practice my JavaScript skills by solving challenges.",
     image: image4,
   },
   {
