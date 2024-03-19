@@ -13,7 +13,7 @@ function ProjectDetails() {
           <h2 className="text-center">{project.title}</h2>
           <img src={project.image} alt={project.title} />
           {project.githubLink ? (
-            <a
+            <a className="text-center"
               href={project.githubLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -25,7 +25,7 @@ function ProjectDetails() {
           )}
         </>
       ) : (
-        <p>Project not found.</p>
+        <p className="text-center">Project not found.</p>
       )}
     </div>
   );

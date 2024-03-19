@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 function Project({ id, title, deployedLink, githubLink, image }) {
   return (
-    <div className="col-sm-6">
+    <div className="col-sm-6 mb-4">
       <div className="card">
         <div
           className="card-body work"
           style={{
             backgroundImage: `url(${image})`,
-            backgroundSize: "cover", 
-            backgroundPosition: "center", 
-            height: "100%", 
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: "100%",
             width: "100%",
           }}
         >
