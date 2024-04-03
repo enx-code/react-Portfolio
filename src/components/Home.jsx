@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 const Home = () => {
   const [isHovering, setIsHovering] = useState(false);
   const imagePath = `${import.meta.env.BASE_URL}matrix.jpeg`;
@@ -38,13 +39,15 @@ const Home = () => {
             >
               <a className="nav-link" href="#">
                 Phone{" "}
-                {isHovering && <span style={{ color: "brightgreen" }}>123456789</span>}
+                {isHovering && (
+                  <span style={{ color: "brightgreen" }}>123456789</span>
+                )}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/contact">
                 Email
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="https://www.google.com">

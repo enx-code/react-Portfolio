@@ -14,10 +14,8 @@ function ContactMe() {
     });
   };
 
-  // Simplified handleSubmit just logs the data
   const handleSubmit = (e) => {
     console.log("Form submitted:", formData);
-    // No e.preventDefault(); allow the form to submit normally
   };
 
   return (
