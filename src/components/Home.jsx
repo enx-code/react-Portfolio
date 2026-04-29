@@ -33,16 +33,16 @@ const Home = () => {
               </a>
             </li>
             <li
-              className="nav-item"
+              className="nav-item phone-nav-item"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <a className="nav-link" href="#">
-                Phone{" "}
+                Phone
+                </a>
                 {isHovering && (
-                  <span style={{ color: "brightgreen" }}>123456789</span>
+                  <span className="phone-tooltip">123456789</span>
                 )}
-              </a>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/contact">
@@ -50,7 +50,7 @@ const Home = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="https://www.google.com">
+              <a className="nav-link" href="https://www.instagram.com">
                 Instagram
               </a>
             </li>

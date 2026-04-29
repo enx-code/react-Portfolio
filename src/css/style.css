@@ -107,3 +107,57 @@ img {
   margin: auto;
   padding: 20px
 }
+/*  */
+
+
+
+/* Fix mobile overlap — give the page breathing room at the bottom */
+#hero-bg {
+  padding-bottom: 80px;
+}
+
+/* Phone nav item — fixed width so neighbours don't shift */
+.phone-nav-item {
+  position: relative;
+  min-width: 120px;
+  text-align: center;
+}
+
+/* Tooltip floats above, completely out of document flow */
+.phone-tooltip {
+  color: greenyellow;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + 8px); /* 8px gap above the link */
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  pointer-events: none; /* so it doesn't interfere with mouse events */
+  z-index: 9999;
+
+  /* Smooth fade in */
+  animation: fadeIn 0.15s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(4px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* Mobile: smaller font so nav items don't overlap each other */
+@media (max-width: 576px) {
+  .fixed-bottom ul {
+    flex-wrap: nowrap;
+    padding: 6px 0;
+  }
+  .fixed-bottom ul li a {
+    font-size: 0.75rem !important;
+    padding: 6px 4px !important;
+  }
+  .phone-nav-item {
+    min-width: 80px;
+  }
+}
