@@ -120,7 +120,6 @@ img {
 .phone-nav-item {
   position: relative;
   min-width: 120px;
-  text-align: center;
 }
 
 /* Tooltip floats above, completely out of document flow */
