@@ -6,7 +6,7 @@ function ContactMe() {
     email: "",
     message: "",
   });
-
+  const [result, setResult] = useState("");
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -14,9 +14,34 @@ function ContactMe() {
     });
   };
 
-  const handleSubmit = (e) => {
-    console.log("Form submitted:", formData);
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    const formDataObj = new FormData(event.target);
+    formDataObj.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataObj,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Success! Message sent.");
+        setFormData({ name: "", email: "", message: "" }); // reset inputs
+      } else {
+        setResult("Error: " + data.message);
+      }
+    } catch (error) {
+      console.error("FETCH ERROR:", error);
+      setResult("Something went wrong.");
+    }
   };
+
+
+
 
   return (
     <div>
@@ -27,9 +52,7 @@ function ContactMe() {
 
         <div className="fs-4 nav justify-content-center justify-content-around align-content-start col-10 border-start border-dark border-4">
           <form
-            action="https://getform.io/f/lakomgya?redirect=https://coruscating-bavarois-3bff34.netlify.app/thank-you"
-            method="POST"
-            onSubmit={handleSubmit}
+            onSubmit={onSubmit}
             className="col-10 fs-4"
           >
             <div className="mb-3">
