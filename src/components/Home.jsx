@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 const Home = () => {
   const [isHovering, setIsHovering] = useState(false);
   const imagePath = `${import.meta.env.BASE_URL}matrix.jpeg`;
-  console.log(imagePath)
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -22,7 +21,7 @@ const Home = () => {
         <div className="container">
           <h6 className="display-4">Create Mindset to Learn!</h6>
         </div>
-        <div className="navbar-fixed-bottom">
+        <div className="fixed-bottom">
           <ul className="fs-4 nav justify-content-center justify-content-around align-content-center fixed-bottom">
             <li className="nav-item">
               <a
@@ -37,9 +36,7 @@ const Home = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <a className="nav-link" href="#">
-                Phone
-                </a>
+              <button className="nav-link btn btn-link p-0 border-0">Phone</button>
                 {isHovering && (
                   <span className="phone-tooltip">123456789</span>
                 )}
