@@ -20,6 +20,49 @@ body,
 .nav-pills a {
   color: var(--border-color);
 }
+.navbar-glow-link {
+  --cursor-x: 50%;
+  --cursor-y: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  isolation: isolate;
+}
+.navbar-glow-link::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  opacity: 0;
+  background: radial-gradient(
+    circle 70px at var(--cursor-x) var(--cursor-y),
+    rgba(57, 255, 20, 0.95),
+    rgba(57, 255, 20, 0.35) 35%,
+    transparent 70%
+  );
+  transition: opacity 0.2s ease-in-out;
+}
+.navbar-glow-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border: 1px solid rgba(57, 255, 20, 0.55);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.navbar-glow-link:hover,
+.navbar-glow-link:focus {
+  color: black !important;
+  box-shadow: 0 0 18px rgba(57, 255, 20, 0.75);
+}
+.navbar-glow-link:hover::before,
+.navbar-glow-link:focus::before,
+.navbar-glow-link:hover::after,
+.navbar-glow-link:focus::after {
+  opacity: 1;
+}
 #hero-bg {
   background-size: cover;
   background-position: center;
@@ -47,10 +90,16 @@ body,
   border-bottom: solid 3px var(--border-color);
   position: absolute;
   display: inline;
-  top: 180px;
-  right: 8%;
+  top: clamp(96px, 20vh, 180px);
+  right: clamp(16px, 8vw, 120px);
   max-width: min(760px, 84vw);
   color: var(--letter-color);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  transition:
+    top 0.35s ease,
+    right 0.35s ease,
+    font-size 0.35s ease,
+    max-width 0.35s ease;
 }
 :root {
   --letter-color: rgb(12, 74, 12);
@@ -187,14 +236,42 @@ img {
   .home-hero-content {
     min-height: 260px;
   }
-  .home-title {
-    top: 96px;
-    right: auto;
-    left: 16px;
-    font-size: 2rem;
-  }
   .home-contact-nav {
     justify-content: center;
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 500px) {
+  #navbar-example2 {
+    gap: 2px;
+    padding-right: 2px !important;
+    padding-left: 2px !important;
+  }
+  .navbar-brand {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .navbar-brand h1 {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+  .nav-pills {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+    gap: 2px;
+    column-gap: 2px;
+  }
+  .nav-pills .nav-item,
+  .nav-pills .nav-link {
+    width: 100%;
+  }
+  .nav-pills .nav-link {
+    min-height: 44px;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-align: center;
+    font-size: 0.88rem;
   }
 }
