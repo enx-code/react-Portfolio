@@ -294,6 +294,37 @@ img {
   margin: auto;
   padding: 20px;
 }
+.about-card {
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 0 !important;
+}
+@media (max-width: 600px) {
+  .about-page,
+  .work-page,
+  .contact-page {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .about-heading,
+  .work-heading,
+  .contact-heading {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: 8px;
+    padding-left: 12px;
+    text-align: left !important;
+  }
+  .about-card,
+  .work-gallery,
+  .contact-form-section {
+    flex: 0 0 100%;
+    width: 100%;
+    border-left: 0 !important;
+    border-top: solid 4px var(--letter-color) !important;
+  }
+}
 @media (max-width: 576px) {
   .home-hero {
     padding-bottom: 170px;

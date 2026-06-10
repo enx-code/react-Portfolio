@@ -45,12 +45,12 @@ function ContactMe() {
 
   return (
     <div>
-      <div className="row footer">
-        <h5 id="scrollspyHeading3" className="fs-2 col-2 text-end">
+      <div className="row footer contact-page">
+        <h5 id="scrollspyHeading3" className="fs-2 col-2 text-end contact-heading">
           Contact Me
         </h5>
 
-        <div className="fs-4 nav justify-content-center justify-content-around align-content-start col-10 border-start border-dark border-4">
+        <div className="fs-4 nav justify-content-center justify-content-around align-content-start col-10 border-start border-dark border-4 contact-form-section">
           <form
             onSubmit={onSubmit}
             className="col-10 fs-4"

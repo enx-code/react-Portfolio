@@ -2,11 +2,11 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="row mx-1">
-      <h5 id="scrollspyHeading1" className="fs-2 col text-end">
+    <div className="row mx-1 about-page">
+      <h5 id="scrollspyHeading1" className="fs-2 col text-end about-heading">
         About Me
       </h5>
-      <div className="card col-10 border-start border-dark border-4">
+      <div className="card col-10 border-start border-dark border-4 about-card">
         <img
           src={`${import.meta.env.BASE_URL}./Attachment-1.png`}
           alt="portrait"
