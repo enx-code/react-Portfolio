@@ -363,7 +363,7 @@ img {
     font-size: 1.1rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   #navbar-example2 {
     gap: 2px;
     padding-right: 2px !important;
