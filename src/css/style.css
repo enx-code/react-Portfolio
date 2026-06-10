@@ -300,6 +300,32 @@ img {
   border-bottom: 0 !important;
   border-radius: 0 !important;
 }
+.contact-error-message {
+  background-color: #ffe6e6;
+  border-left: solid 4px #b00020;
+  color: #7a0016;
+  padding: 10px 12px;
+}
+.success-page {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.success-message {
+  max-width: 520px;
+  width: 100%;
+  border-left: solid 4px var(--letter-color);
+  padding: 24px;
+}
+.success-message h2 {
+  color: var(--letter-color);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+.success-message p {
+  font-size: 1.5rem;
+}
 @media (max-width: 600px) {
   .about-page,
   .work-page,

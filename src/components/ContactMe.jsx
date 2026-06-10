@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function ContactMe() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
   const [result, setResult] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -16,6 +20,8 @@ function ContactMe() {
 
   const onSubmit = async (event) => {
     event.preventDefault();
+    setResult("");
+    setIsSubmitting(true);
 
     const formDataObj = new FormData(event.target);
     formDataObj.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
@@ -29,14 +35,16 @@ function ContactMe() {
       const data = await response.json();
 
       if (data.success) {
-        setResult("Success! Message sent.");
         setFormData({ name: "", email: "", message: "" }); // reset inputs
+        navigate("/success");
       } else {
-        setResult("Error: " + data.message);
+        setResult(data.message || "Message was not sent. Please try again.");
       }
     } catch (error) {
       console.error("FETCH ERROR:", error);
-      setResult("Something went wrong.");
+      setResult("Message was not sent. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -97,8 +105,13 @@ function ContactMe() {
                 required
               />
             </div>
-            <button type="submit" className="btn btn-primary fs-4">
-              Send
+            {result && (
+              <p className="contact-error-message" role="alert">
+                {result}
+              </p>
+            )}
+            <button type="submit" className="btn btn-primary fs-4" disabled={isSubmitting}>
+              {isSubmitting ? "Sending..." : "Send"}
             </button>
           </form>
         </div>

@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Work from "./components/Work";
 import ContactMe from "./components/ContactMe";
+import Success from "./components/Success";
 import ProjectDetails from './components/ProjectDetails';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/contact" element={<ContactMe />} />
+        <Route path="/success" element={<Success />} />
         <Route path="/work" element={<Work />} />
         <Route path="/work/:projectId" element={<ProjectDetails />} />
       </Routes>
