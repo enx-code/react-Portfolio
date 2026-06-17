@@ -173,16 +173,6 @@ body,
   --bs-btn-border-color: #39ff14 !important;
 }
 
-.nameOfProject {
-  background-color: bisque;
-  padding: 5px;
-  border-bottom: solid 3px var(--border-color);
-  position: relative;
-  display: inline-block;
-  bottom: -100px;
-  opacity: 0.8;
-  color: var(--letter-color);
-}
 img {
   height: var(--image-height);
   object-fit: cover;

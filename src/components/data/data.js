@@ -2,8 +2,6 @@ import image1 from "../../images/1project.png";
 import image2 from "../../images/passGenerator.png";
 import image3 from "../../images/ClickyGame.png";
 import image4 from "../../images/codewars.png";
-import image5 from "../../images/1project.png";
-import image6 from "../../images/1project.png";
 export const projectsData = [
   {
     id: 1,
