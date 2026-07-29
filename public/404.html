@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Portfolio</title>
+    <script>
+      const base = "/react-Portfolio/";
+      const currentPath = window.location.pathname;
+
+      if (currentPath.startsWith(base)) {
+        const route = currentPath.slice(base.length);
+        window.location.replace(`${base}?redirect=${encodeURIComponent(route)}${window.location.search}${window.location.hash}`);
+      } else {
+        window.location.replace(base);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
