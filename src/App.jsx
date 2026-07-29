@@ -10,7 +10,7 @@ import ProjectDetails from './components/ProjectDetails';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-Portfolio">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
