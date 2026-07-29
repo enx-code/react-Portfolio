@@ -31,18 +31,4 @@ export const projectsData = [
     desc: "This is the website where I practice my JavaScript skills by solving challenges.",
     image: image4,
   },
-  {
-    id: 5,
-    title: "Generate Password",
-    deployedLink: "https://enx-code.github.io/Password-Generator/",
-    githubLink: "https://github.com/enx-code/Password-Generator",
-    image: "./src/images/Screenshot 2024-01-30 at 16.20.15.png",
-  },
-  {
-    id: 6,
-    title: "Generate Password",
-    deployedLink: "https://enx-code.github.io/Password-Generator/",
-    githubLink: "https://github.com/enx-code/Password-Generator",
-    image: "./src/images/Screenshot 2024-01-30 at 16.20.15.png",
-  },
 ];
